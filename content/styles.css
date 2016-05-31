@@ -1,0 +1,646 @@
+/**************************************************************
+ *                      Grundsätzliches                       *
+ **************************************************************/
+
+html
+{
+	margin:0px;
+	padding:0px;
+}
+
+body
+{
+	font-family:	"Arial",sans-serif;
+	font-size:	10px;
+	color:		#000000;
+	text-transform:	none;
+	text-align:	left;
+	cursor:		default;
+	font-style:	normal;
+	font-weight:	normal;
+	background:	#404348;
+	margin:		0px;
+	padding:	0px;
+	font-size:	13px;
+}
+
+/**************************************************************
+ *                        Container                           *
+ **************************************************************/
+
+#container
+{
+	position:	relative;
+	margin:		auto;
+	margin-top:	15px;
+	margin-bottom:	30px;
+	width:		900px;
+	text-align:	left;
+	background:	#FFFFFF;
+}
+
+#container #rahmen1
+{
+	position:	absolute;
+	z-index:	2;
+	top:		0px;
+	bottom:		0px;
+	left:		0px;
+	right:		0px;
+	border:		1px solid #bcddf0;
+}
+
+#container #rahmen2
+{
+	position:	absolute;
+	z-index:	2;
+	top:		1px;
+	bottom:		1px;
+	left:		1px;
+	right:		1px;
+	border:		1px solid #c7e3f1;
+}
+
+#container #rahmen3
+{
+	position:	absolute;
+	z-index:	2;
+	top:		2px;
+	bottom:		2px;
+	left:		2px;
+	right:		2px;
+	border:		1px solid #d2eaf6;
+}
+
+#container #rahmen4
+{
+	position:	absolute;
+	z-index:	2;
+	top:		3px;
+	bottom:		3px;
+	left:		3px;
+	right:		3px;
+	border:		1px solid #dcedf5;
+}
+
+#container #rahmen5
+{
+	position:	absolute;
+	z-index:	2;
+	top:		4px;
+	bottom:		4px;
+	left:		4px;
+	right:		4px;
+	border:		1px solid #eaf5fa;
+}
+
+#container #rahmen6
+{
+	position:	absolute;
+	z-index:	2;
+	top:		5px;
+	bottom:		5px;
+	left:		5px;
+	right:		5px;
+	border:		1px solid #f5f9fd;
+}
+
+#container #innen
+{
+	position:	relative;
+	z-index:	5;
+	margin:		0px;
+	padding:	0px;
+	width:		100%;
+}
+
+#container #innen #header
+{
+	position:	relative;
+	top:		0px;
+	left:		0px;
+	width:		100%;
+	height:		200px;
+}
+
+#container #innen #header #logo
+{
+	position:	absolute;
+	z-index:	5;
+	top:		0px;
+	left:		20px;
+	width:		250px;
+	height:		119px;
+	background:	url('pics/logo.png');
+}
+
+#container #innen #header #logo100
+{
+	position:	absolute;
+	z-index:	5;
+	top:		105px;
+	left:		75px;
+	width:		72px;
+	height:		60px;
+	background:	url('pics/logo_xxx.png');
+}
+
+#container #innen #header #titelbild
+{
+	position:	absolute;
+	z-index:	2;
+	right:		0px;
+	top:		0px;
+	height:		200px;
+	width:		673px;
+}
+
+#container #innen #header #sprache
+{
+	position:	absolute;
+	left:		20px;
+	top:		150px;
+	width:		170px;
+	height:		20px;
+	text-align:	right;
+}
+
+#container #innen #header #suche
+{
+	position:	absolute;
+	left:		24px;
+	top:		179px;
+	width:		170px;
+	height:		20px;
+}
+
+#container #innen #header #suche .sucheinput
+{
+	height:		14px;
+	width:		134px;
+	float:		left;
+	border:		2px solid lightgray;
+}
+
+#container #innen #header #suche .suchebutton
+{
+	height:		20px;
+	width:		30px;
+	font-size:	9px;
+	border:		2px solid darkgray;
+	background:	lightgray;
+	color:		gray;
+}
+
+#container #innen #topmenue
+{
+	position:	relative;
+	top:		0px;
+	left:		0px;
+	width:		880px;
+	height:		32px;
+	text-align:	right;
+}
+
+#container #innen #topmenue #sprache
+{
+	float:		left;
+	height:		20px;
+	margin:		0px;
+	padding:	0px;
+	margin-left:	227px;
+	margin-top:	6px;
+}
+
+#container #innen #menue
+{
+	position:	relative;
+	top:		0px;
+	left:		20px;
+	width:		190px;
+	float:		left;
+	font-weight:	bold;
+	text-transform:	uppercase;
+}
+
+#container #innen #menue #adresse
+{
+	position:	relative;
+	top:		0px;
+	left:		22px;
+	margin-top:	50px;
+	color:		#666A51;
+	font-size:	11px;
+	font-weight:	bold;
+	line-height:	17px;
+	text-transform:	none;
+}
+
+#container #innen #inhalt
+{
+	position:	relative;
+	top:		0px;
+	right:		30px;
+	width:		644px;
+	float:		right;
+}
+
+#container #innen #spanner
+{
+	position:	relative;
+	top:		0px;
+	left:		0px;
+	clear:		both;
+	width:		100%;
+	height:		35px;
+	z-index:	0;
+}
+
+#container #ecke_or
+{
+	position:	absolute;
+	z-index:	10;
+	top:		0px;
+	right:		0px;
+	width:		10px;
+	height:		10px;
+	background:	url('../bilder/ecke_or.png');
+}
+
+#container #ecke_ur
+{
+	position:	absolute;
+	z-index:	10;
+	bottom:		0px;
+	right:		0px;
+	width:		10px;
+	height:		10px;
+	background:	url('../bilder/ecke_ur.png');
+}
+
+#container #ecke_ul
+{
+	position:	absolute;
+	z-index:	10;
+	bottom:		0px;
+	left:		0px;
+	width:		10px;
+	height:		10px;
+	background:	url('../bilder/ecke_ul.png');
+}
+
+
+/***************************************************************
+ *                     Menü-Formatierung                       *
+ ***************************************************************/
+
+p.topmenuepunkt
+{
+	float:		right;
+	height:		32px;
+	margin:		0px;
+	padding:	0px;
+	margin-right:	10px;
+}
+
+p.topmenuepunkt a
+{
+	text-decoration:none;
+	font-size:	11px;
+	font-weight:	bold;
+	line-height:	32px;
+	color:		#666A51;
+}
+
+p.menuepunkt, p.menuepunktaktiv
+{
+	width:		150px;
+	height:		22px;
+	font-size:	13px;
+	line-height:	22px;
+	padding:	0px;
+	margin:		0px;
+	margin-left:	10px;
+	text-indent:	2px;
+	border-top:	1px solid #666A51;
+}
+
+p.menuepunkt a, p.menuepunktaktiv a, p.submenuepunkt a, p.submenuepunktaktiv a
+{
+	text-decoration:none;
+	color:		#666A51;
+}
+
+p.menuepunktaktiv a, p.submenuepunktaktiv a
+{
+	color:		#FF3333;
+	font-weight:	bold;
+}
+
+p.menuepunkt a:hover, p.submenuepunkt a:hover
+{
+	color:		#FF3333;
+	font-weight:	bold;
+}
+
+p.submenuepunkt, p.submenuepunktaktiv
+{
+	width:		140px;
+	font-size:	12px;
+	line-height:	17px;
+	padding:	0px;
+	margin:		0px;
+	margin-left:	40px;
+	text-indent:	-8px;
+}
+
+
+/***************************************************************
+ *                    Schrift-Formatierung                     *
+ **************************************************************/
+
+h1
+{
+	font-size:	16.5px;
+	font-weight:	bold;
+	margin:		0px;
+	padding:	0px;
+	color:		#FF3333;
+	margin-bottom:	5px;
+}
+
+h2, h3, h4, h5, h6
+{
+	color:		#FF3333;
+}
+
+h2 a
+{
+	font-size:	15px;
+	font-weight:	bold;
+	text-decoration:none;
+	color:		#FF3333;
+}
+
+p.bodytext
+{
+	margin:		0px;
+	margin-bottom:	5px;
+	padding:	0px;
+	text-align:	left;
+}
+
+/***************************************************************
+ *              vordefinierte RTE-Formatierung                 *
+ ***************************************************************/
+
+.csc-header
+{
+	clear:			both;
+}
+
+#textbereich .csc-textpic-intext-left-nowrap img
+{
+	margin:			20px;
+	margin-top:		0px;
+}
+
+.align-center
+{
+	text-align:		center;
+}
+
+.align-left
+{
+	text-align:		left;
+}
+
+.align-right
+{
+	text-align:		right;
+}
+
+img
+{
+	border:			0px;
+}
+
+.csc-default
+{
+	margin-bottom:		12px;
+}
+
+/***************************************************************
+ *                   Sitemap-Formatierung                      *
+ ***************************************************************/
+
+.csc-sitemap
+{
+}
+
+.csc-sitemap > ul > li
+{
+	margin-top:		5px;
+}
+
+.csc-sitemap > ul > li > a
+{
+	text-decoration:	none;
+	color:		#666A51;
+	font-size:		13px;
+	font-weight:		bold;
+}
+
+.csc-sitemap > ul > li > ul
+{
+	margin-bottom:		6px;
+}
+
+.csc-sitemap > ul > li > ul > li
+{
+	margin-top:		3px;
+}
+
+.csc-sitemap > ul > li > ul > li > a
+{
+	text-decoration:	none;
+	color:		#666A51;
+	font-size:		11px;
+}
+
+/***************************************************************
+ *                  Referenzen-Formatierung                    *
+ ***************************************************************/
+
+.ref-over
+{
+	height:			110px;
+	position:		relative;
+	vertical-align:		middle;
+}
+
+.ref-over-img
+{
+	clear:			both;
+	float:			left;
+	width:			100px;
+	height:			100px;
+}
+
+.ref-over-img img
+{
+	max-width:		100px;
+	max-height:		100px;
+	margin:			auto;
+}
+
+.ref-over-text
+{
+	height:			100px;
+	margin-left:		120px;
+}
+
+.ref-over-text a
+{
+	text-decoration:	none;
+	position:		relative;
+	top:			30px;
+	color:			#666A51;
+	font-weight:		bold;
+	font-size:		14px;
+}
+
+a.ref-over-link
+{
+	text-decoration:	none;
+	color:			#666A51;
+}
+
+a.ref-over-link:hover
+{
+	color:			#FF3333;
+}
+
+.ref-cat
+{
+	height:			133;
+	width:			200px;
+	position:		relative;
+	vertical-align:		middle;
+	padding:		15px;
+	padding-right:		0px;
+	padding-left:		0px;
+	float:			left;
+}
+
+.ref-cat-img
+{
+	clear:			both;
+	float:			left;
+	width:			200px;
+	height:			133px;
+	text-align:		center;
+}
+
+.ref-cat-img img
+{
+	max-width:		200px;
+	max-height:		133px;
+	margin:			auto;
+	border:			2px solid #BBBBBB;
+}
+
+.ref-cat-text
+{
+	width:			200px;
+	text-align:		center;
+}
+
+.ref-cat a .ref-cat-text
+{
+	text-decoration:	none;
+	position:		relative;
+	top:			12px;
+	color:			#666A51;
+	font-weight:	normal;
+	font-size:		14px;
+	border:			0px;
+	margin-bottom:	8px;
+}
+
+.ref-cat-images
+{
+	visibility:		hidden;
+}
+
+.ref-cat-entries
+{
+	width:			100%;
+	height:			143px;
+	margin-top:		0px;
+}
+
+.ref-cat-more, .ref-cat-more a
+{
+	width:			200px;
+	height:			12px;
+	text-align:		center;
+	color:			#FF3333;
+	font-weight:		bold;
+	text-decoration:	none;
+	margin:			auto;
+	position:		relative;
+	z-index:		10;
+}
+
+.ref-lb-title
+{
+    font-family: Arial;
+    font-variant: small-caps ;
+	font-size:		20px;
+	font-weight:	bold;
+	margin-bottom:	5px;
+}
+
+.ref-lb-left
+{
+	float:			left;
+}
+
+.ref-lb-aktion, .ref-lb-architekt, .ref-lb-stichwoerter
+{
+	font-size:		12px;
+	font-weight:	normal;
+	margin-bottom:	6px;
+	vertical-align:	top;
+}
+
+.ref-lb-spanner
+{
+	height:			5px;
+	clear:			both;
+}
+
+.ref-lb-head
+{
+	font-weight:	bold;
+	width:			100px;
+	float:			left;
+	clear:			both;
+}
+
+.ref-lb-entry
+{
+	float:			right;
+	margin-left:	10px;
+	text-align:		left;
+	min-width:		200px;
+}
+
+.ref-lb-beschreibung
+{
+	clear:				both;
+	font-size:			11px;
+	font-weight:		bold;
+	padding-left:		110px;
+}

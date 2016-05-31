@@ -1,0 +1,208 @@
+﻿
+/**************************************************************
+ *                      GrundsÃ¤tzliches                       *
+ **************************************************************/
+
+#logo
+{
+    position:       fixed;
+    top:            30px;
+    height:         100px;
+    left:           150px;
+    width:          auto;
+    float:          left;
+}
+
+img.header
+{
+    position:       relative;
+    left:           400px;
+    top:            20px;
+    height:         100px;
+    width:          auto;
+}
+
+img.homepic
+{
+    position:       relative;
+    top:            40px;
+    width:          600px;
+    
+    margin-left:    40px;
+    height:         auto;
+}
+
+
+/**************************************************************
+ *                      MenÃ¼leiste                            *
+ **************************************************************/
+#navi
+{
+    position:       fixed;
+    top:            200px;
+    left:           200px;
+    width:          150px;
+    
+    font-family:    Arial;
+    color:          #000000;
+    font-weight:    bold; 
+    font-variant:   small-caps;
+    text-align:     right;
+}
+
+a.main
+{
+    text-decoration: none;
+    color: #000000; 
+}
+
+
+a.sub
+{
+    text-decoration: none;
+    color:  #808080;
+    font-size: 14px;
+ }
+
+
+
+#adresse
+{
+    position:       fixed;
+    top:            625px;
+    left:           200px;
+    width:          150px;
+
+    vertical-align: top;
+    font-family:    Arial;
+    color:          #506575;
+    font-size:      10px;
+    line-height:    1.5;
+
+    font-variant: small-caps; 
+    text-align:     right;
+    font-weight: bold;
+}
+
+
+/**************************************************************
+ *      Hauptbox mit Text und zusÃ¤tzlichen Fotos              *
+ **************************************************************/
+
+#haupttext
+{   
+    position:       absolute;
+    top:            200px;
+    left:           450px;
+    width:          650px;   
+                              
+    font-family:    Arial;
+    color:          #000000;
+    font-size:      14px;
+    line-height:    1.5;
+    text-align:     justify;
+}
+
+table {
+    width: 100%;
+}
+table.menu {
+    width: auto;
+    margin-right: 0px;
+    margin-left: auto;
+    line-height: 1;
+}
+
+
+
+/**************************************************************
+ *              Seitenspezifisches Layout                     *
+ **************************************************************/
+ 
+ 
+ 
+ /* Aktuelles */
+ 
+p.aktuelles:after{
+     
+     background-color: #000;
+     content: "";
+    display: block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 100%;
+ }
+
+img.aktuelles
+{
+    height:         250px;
+    width:          auto;
+} 
+
+
+
+/*Gallerie*/
+ 
+ 
+figure 
+{
+    margin: 0.5em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    float: left;
+}
+ 
+ img.ref{
+    width:          200px;
+    
+    border:         solid;
+    border-width:   thin;
+    border-color:   #808080;
+ }
+ 
+figcaption {
+    padding:        3px;
+    text-align:     center;
+    color:          #000000;
+    font-size:      small;
+}
+
+figcaption.enter {
+    padding:        3px;
+    text-align:     right;
+    color:          #000000;
+    font-size:      small;
+}
+
+
+a.figure {
+  text-decoration: none;  
+}
+
+
+h2 
+{
+    font-variant: small-caps;
+    font-size: 18;
+}
+
+/*UeberUns*/
+
+
+img.werkstatt{
+    height:         200px;
+    width:          auto;
+    border-color:   #808080;
+    left:           50px;
+    right:          50px;
+    display:        run-in;
+ }
+
+ img.ueberuns{
+    height:         auto;
+    width:          500px;
+    border-color:   #808080;
+    left:           50px;
+    right:          50px;
+ }
