@@ -134,6 +134,12 @@ p.aktuelles:after{
     width: 100%;
  }
 
+ p.on_enter{
+	margin-top: 35em;
+ }
+
+
+ 
 img.aktuelles
 {
     height:         250px;
@@ -152,6 +158,11 @@ figure
     margin-bottom: 1em;
     float: left;
 }
+
+figure.akt 
+{
+    float: none;
+}
  
  img.ref{
     width:          200px;
@@ -165,7 +176,14 @@ figcaption {
     padding:        3px;
     text-align:     center;
     color:          #000000;
-    font-size:      small;
+    font-size:      medium;
+}
+
+figcaption.akt {
+    padding:        3px;
+    text-align:     left;
+    color:          #000000;
+    font-size:      medium;
 }
 
 figcaption.enter {
