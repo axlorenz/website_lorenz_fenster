@@ -176,7 +176,7 @@ figcaption {
     padding:        3px;
     text-align:     center;
     color:          #000000;
-    font-size:      medium;
+    font-size:      small;
 }
 
 figcaption.akt {
@@ -188,9 +188,9 @@ figcaption.akt {
 
 figcaption.enter {
     padding:        3px;
-    text-align:     right;
+    text-align:     center;
     color:          #000000;
-    font-size:      small;
+    font-size:      medium;
 }
 
 
