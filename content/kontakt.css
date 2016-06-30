@@ -30,7 +30,7 @@ input {
 	padding: .2em .5em;
 	background-color: #fffbf0;
 	border: 1px solid #e7c157;
-	width: 15em;
+	width: 50%; %15em;
 }
 
 label.input {
