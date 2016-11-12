@@ -26,17 +26,19 @@
       $text = stripslashes($text);
     }
     $return = chr(13).chr(10);
-    $an = "axel.lorenz84@gmail.com" ;
-    $betreff = "Kontaktformular Nachricht" ;
+    $an = "info@lorenz-fenster.de" ;
+    $betreff = "Kontaktformular Nachricht von ".$mail;
     $von = "From: Kontaktformular <info@lorenz-fenster.de>" ;
     $datum = "Datum: ".date("j.n.Y").$return;
     $zeit = "Zeit:  ".date("H:i").$return;
     $abs     = "Von:          ".$name." <".$mail.">".$return;
     $str_ort = "Ort:          <".$ort.">".$return;
     $str_tel = "Telefon:      <".$tel.">".$return;
+    $str_add_text = "Erinnerung an Anja/Mathilde Lorenz: Bitte nicht automatisch antworten, sondern Email-Empfänger manuell selektieren. Gruß Axel".$return;
     $trennen = "-----------------------------------------------".$return;
-    $nachricht = $datum.$zeit.$abs.$str_ort.$str_tel.$trennen.$text;
-    mail($an,$betreff,$nachricht,$von);
+    $nachricht = $datum.$zeit.$abs.$str_ort.$str_tel.$str_add_text.$trennen.$text;
+    $nachricht2 = $datum.$zeit.$abs.$str_ort.$str_tel.$trennen.$text;
+	mail($an,$betreff,$nachricht,$von);
   }
   ?>
   <html>
@@ -47,11 +49,11 @@
   <?php
   if (empty($fehler)) {
     $return = chr(13).chr(10);
-    $nachricht = strip_tags($nachricht);
-    $nachricht = htmlentities($nachricht);
-    $nachricht = str_replace($return,"<br>",$nachricht);
+    $nachricht2 = strip_tags($nachricht2);
+    $nachricht2 = htmlentities($nachricht2);
+    $nachricht2 = str_replace($return,"<br>",$nachricht2);
     echo "<p>Ihre Nachricht wurde versendet.</p>" ;
-    echo "<p>$nachricht</p>" ;
+    echo "<p>$nachricht2</p>" ;
   } else {
     echo "<p>Ihre Nachricht wurde nicht gesendet, weil</p>" ;
     echo "<ul>$fehler</ul>" ;
